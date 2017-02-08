@@ -26,6 +26,7 @@ function ajax(opts) {
                         xmlhttp.send(dataStr);
                     }
                 }
+
 //封装hasClass,removeClass,addClass
 function hasClass(ele, cls) {
   return !!ele.className.match(new RegExp('\\b' + cls + '\\b'));
@@ -59,6 +60,7 @@ function singleAddClass(ele, cls) {
 function singleRemoveClass(ele, cls) {
   ele.className = ele.className.replace(new RegExp('\\b' + cls + '\\b', 'g'), '');
 }
+
 //正则表达式，用于检测用户名，密码格式是否正确。
 
 //合法的用户名, 3~10个字符，只能是字母，数字，下划线
